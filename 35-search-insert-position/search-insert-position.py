@@ -5,15 +5,14 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        low = 0;
+        low = 0
         high = len(nums)-1
-        while low <= high:
-            mid = low + (high - low)//2
+        while low <=high:
+            mid = low + (high-low)//2
             if nums[mid] == target:
                 return mid
-            elif nums[mid] > target:
-                high = mid-1
+            elif nums[mid]>target:
+                high = mid -1
             else:
-                low = mid + 1 
+                low = mid +1
         return low
-            
