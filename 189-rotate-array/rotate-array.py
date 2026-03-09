@@ -9,6 +9,4 @@ class Solution(object):
 
         nums [:] = nums[-k:] + nums[:-k]
 
-        return nums
-
-        
+     
