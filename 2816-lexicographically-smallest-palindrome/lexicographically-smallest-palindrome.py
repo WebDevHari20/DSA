@@ -1,5 +1,5 @@
-class Solution(object):
-    def makeSmallestPalindrome(self, s):
+class Solution:
+    def makeSmallestPalindrome(self, s: str) -> str:
         s = list(s)
         i, j = 0, len(s)-1
         while i<j:
